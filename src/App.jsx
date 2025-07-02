@@ -1,19 +1,17 @@
-function App() {
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import QuickLinks from "./components/QuickLinks";
+import About from "./components/About";
+import Footer from "./components/Footer";
+
+export default function App() {
   return (
-    <div className="text-center min-h-screen bg-gray-100">
-      <header className="bg-blue-800 text-white py-6">
-        <h1 className="text-3xl font-bold">Habiganj Govt. High School</h1>
-        <p className="text-sm">Proud Demo Website by a Student</p>
-      </header>
-      <main className="p-6">
-        <h2 className="text-xl mb-4">📸 Photo Gallery Coming Soon!</h2>
-        <p>This site is a modern demo rebuild of the official website.</p>
-      </main>
-      <footer className="bg-blue-800 text-white py-3 mt-8">
-        &copy; 2025 HGHS. All rights reserved.
-      </footer>
+    <div className="font-sans">
+      <Header />
+      <Hero />
+      <QuickLinks />
+      <About />
+      <Footer />
     </div>
   );
 }
-
-export default App;
